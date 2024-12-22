@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FitHub Avatar Customization</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/build/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/loaders/OBJLoader.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="FitHub Logo">
+            <h1>Customize Your Avatar</h1>
+        </header>
+        <main>
+            <div id="customization-controls">
+                <label for="body-frame">Body Frame:</label>
+                <select id="body-frame">
+                    <option value="small">Small</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <label for="hair-style">Hair Style:</label>
+                <select id="hair-style">
+                    <option value="short" selected>Short</option>
+                    <option value="long">Long</option>
+                    <option value="bald">Bald</option>
+                </select>
+
+                <label for="skin-color">Skin Color:</label>
+                <input type="color" id="skin-color" value="#ffcc99">
+            </div>
+        </main>
+        <footer>
+            <p>© 2024 FitHub</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
